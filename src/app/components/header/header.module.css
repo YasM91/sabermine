@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  color: #1a1a1a;
+  padding: 1rem 2rem;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 8px 4px -4px #d3d3d3;
+  margin-bottom: 2rem;
+}
+
+.header-icon {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-left: 0.5rem;
+  }
+  .header-title {
+    display: none;
+  }
+}
