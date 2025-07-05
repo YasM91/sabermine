@@ -44,8 +44,8 @@
 }
 
 .delete {
-  background-color: #800000;
-  border-color: #800000;
+  background-color: var(--color-red);
+  border-color: var(--color-red);
 }
 
 .edit {
