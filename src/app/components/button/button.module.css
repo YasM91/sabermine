@@ -11,13 +11,9 @@
   color: var(--color-secondary);
   transition: transform 0.2s ease;
   text-transform: capitalize;
+  cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .button:hover {
-    transform: scale(1.05);
-  }
-}
 .button-disabled {
   background-color: var(--color-secondary);
   color: var(--color-text);
@@ -45,4 +41,15 @@
 .on {
   background-color: var(--color-primary);
   color: var(--color-secondary);
+}
+
+.delete {
+  background-color: #800000;
+  border-color: #800000;
+}
+
+.edit {
+  background-color: var(--color-text);
+  color: var(--color-secondary);
+  border-color: var(--color-text);
 }

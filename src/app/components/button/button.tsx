@@ -8,6 +8,7 @@ import styles from './button.module.css';
 type SubmitProps = {
   type: 'submit';
   label: string;
+  action?: 'delete' | 'edit';
 };
 
 type SwitchProps = {
@@ -32,12 +33,17 @@ const SwitchButton = ({ isSelected, onToggle, label }: SwitchProps) => (
   </div>
 );
 
-const SubmitButton = ({ label }: SubmitProps) => {
+const SubmitButton = ({ label, action }: SubmitProps) => {
   const { pending } = useFormStatus();
 
   return (
     <button
-      className={clsx(styles.button, pending && styles['button-disabled'])}
+      className={clsx(
+        styles.button,
+        pending && styles['button-disabled'],
+        action === 'edit' && styles.edit,
+        action === 'delete' && styles.delete
+      )}
       disabled={pending}
       aria-disabled={pending}
       type="submit"
@@ -56,7 +62,7 @@ const Button = ({ item }: ButtonProps) =>
       onToggle={item.onToggle}
     />
   ) : (
-    <SubmitButton type={item.type} label={item.label} />
+    <SubmitButton type={item.type} label={item.label} action={item.action} />
   );
 
 export default Button;
