@@ -21,10 +21,11 @@
     "paths": {
       "@components": ["./src/app/components/index.ts"],
       "@/lib/*": ["./src/app/lib/*"],
-      "@/utils/*": ["./src/app/utils/*"]
+      "@/utils/*": ["./src/app/utils/*"],
+      "@types": ["./src/app/types/index.ts"]
     },
     "types": ["jest", "@testing-library/jest-dom"]
   },
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx", "jest.config.js"],
   "exclude": ["node_modules"]
 }

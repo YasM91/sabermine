@@ -1,0 +1,9 @@
+.textarea {
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid var(--color-primary);
+  resize: none;
+}

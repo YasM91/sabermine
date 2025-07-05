@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  color: #1a1a1a;
+  color: var(--color-primary);
   padding: 1rem 2rem;
   align-items: center;
   justify-content: space-between;
@@ -10,6 +10,7 @@
 
 .header-icon {
   display: flex;
+  gap: 10px;
   align-items: center;
 }
 

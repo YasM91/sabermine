@@ -1,6 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  justify-items: center;
 }
 
 @media (max-width: 768px) {
@@ -8,4 +9,13 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
+}
+
+.switch-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.textarea__container {
+  width: 80%;
 }
