@@ -10,10 +10,10 @@ const List = ({ regexItems, type }: Props) => (
   <ul className={styles.list}>
     {regexItems.map((item, index) =>
       type == 'edit' ? (
-        <li key={index}>
+        <li key={index} className={styles['list__container']}>
           <Input defaultValue={item} />
 
-          <div>
+          <div className={styles['list-buttons']}>
             <Button
               item={{
                 type: 'submit',
